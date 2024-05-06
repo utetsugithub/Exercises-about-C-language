@@ -43,4 +43,21 @@ int main (void){
 }
 
 
+// a=25, b=4 とする．この a,b の整数変数同士の加算，減算，乗算，除算，剰余を (標準出力に) 出力しなさい
+
+#include <stdio.h>
+
+int a = 25;
+int b = 4;
+
+int add = 25 + 4;
+int sub = 25 - 4;
+int mlt = 25 * 4;
+int div = 25 / 4;
+int dpl = 25 % 4;
+
+int main (void){
+    printf(" a + b = %d\n a - b = %d\n a * b = %d\n a / b = %d\n a %% b = %d\n", add, sub, mlt, div, dpl);
+    return 0;
+}
 
