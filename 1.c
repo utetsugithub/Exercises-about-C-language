@@ -1,4 +1,4 @@
-// Hello, World!と出力する
+// 1.1 Hello, World!と出力する
 
 #include <stdio.h>         // 標準入出力ライブラリのヘッダファイルを読み込む
 
@@ -8,7 +8,7 @@ int main (void){　　　　　// 実行時main( )関数から処理が始まる
 }
 
 
-// 英文で，学科名学部名大学名を出力する
+// 1.2 英文で，学科名学部名大学名を出力する
 
 #include <stdio.h>
 
@@ -18,7 +18,7 @@ int main (void){
 }
 
 
-// 英文で自己紹介を複数行で出力して，最後に改行するプログラムを作成しなさい．printf() を複数回使うこと
+// 1.3 英文で自己紹介を複数行で出力して，最後に改行するプログラムを作成しなさい．printf() を複数回使うこと
 
 #include <stdio.h>
 
@@ -30,7 +30,7 @@ int main (void){
 }
 
 
-// 整数変数 a,b を宣言する．それぞれの変数に今日の日と月を代入する．例えば, 4月25日であれば，a=25, b=4 とする．
+// 1.4 整数変数 a,b を宣言する．それぞれの変数に今日の日と月を代入する．例えば, 4月25日であれば，a=25, b=4 とする．
 
 #include <stdio.h>
 
@@ -43,7 +43,7 @@ int main (void){
 }
 
 
-// a=25, b=4 とする．この a,b の整数変数同士の加算，減算，乗算，除算，剰余を (標準出力に) 出力しなさい
+// 1.5 a=25, b=4 とする．この a,b の整数変数同士の加算，減算，乗算，除算，剰余を (標準出力に) 出力しなさい
 
 #include <stdio.h>
 
@@ -61,3 +61,186 @@ int main (void){
     return 0;
 }
 
+
+//1.6 for 文を使い，1 から 10 までの整数を出力しなさい．
+
+#include <stdio.h>
+
+int main(void) {
+
+        for(int i = 1; i <= 10; i++){
+           printf("%d\n", i);}
+
+    return 0;
+}
+
+
+//1.7 for 文を使い，1 から 1000 までの整数を出力しなさい．
+
+#include <stdio.h>
+
+int main(void) {
+
+        for(int i = 1; i <= 1000; i++){
+           printf("%d\n", i);}
+
+    return 0;
+}
+
+
+//1。8 for 文を使い，1 から 1000 までの偶数を出力しなさい．
+
+#include <stdio.h>
+
+int main(void) {
+
+        for(int i = 1; i <= 1000; i++){
+                if(i % 2 == 0){
+           printf("%d\n", i);
+                }
+
+        }
+    return 0;
+}
+
+
+//1.9 for 文だけを使い，2 から 1000 までの偶数を出力しなさい．
+
+#include <stdio.h>
+
+int main(void) {
+
+        for(int i = 2; i <= 1000; i += 2){
+           printf("%d\n", i);
+
+        }
+    return 0;
+}
+
+
+//1.10 for 文だけを使い，1 から 1000 までの奇数を出力しなさい．
+
+#include <stdio.h>
+
+int main(void) {
+
+        for(int i = 1; i <= 1000; i += 2){
+           printf("%d\n", i);
+
+        }
+    return 0;
+}
+
+
+//1.11 for 文を使い，1 から 10 までの整数の和を求め，出力するプログラムを作成しなさい．
+
+#include <stdio.h>
+
+int main(void) {
+
+int sum;
+
+for(int i = 1; i <= 10; i ++){
+        sum += i;
+}
+    printf("%d\n", sum);
+   return 0;
+}
+
+
+//1.12 for 文を使い，10 から 30 までの整数の和を求め，出力するプログラムを作成しなさい．
+
+#include <stdio.h>
+
+int main(void) {
+
+int sum;
+
+for(int i = 10; i <= 30; i ++){
+        sum += i;
+}
+    printf("%d\n", sum);
+   return 0;
+}
+
+
+//1.13 for 文を使い，15 から 67 までの整数の和を求め，出力するプログラムを作成しなさい．
+
+#include <stdio.h>
+
+int main(void) {
+
+int sum;
+
+for(int i = 15; i <= 67; i ++){
+        sum += i;
+}
+    printf("%d\n", sum);
+   return 0;
+}
+
+
+//for 文を使い，1 から 10 までの範囲の偶数の和を求め，出力するプログラムを作成しなさい．
+
+#include <stdio.h>
+
+int main(void) {
+
+int sum;
+
+for(int i = 2; i <= 10; i += 2){
+        sum += i;
+}
+    printf("%d\n", sum);
+   return 0;
+}
+
+
+//for 文を使い，1 から 10 までの範囲の奇数の和を求め，出力するプログラムを作成しなさい．
+
+#include <stdio.h>
+
+int main(void) {
+
+int sum;
+
+for(int i = 1; i <= 10; i += 2){
+        sum += i;
+}
+    printf("%d\n", sum);
+   return 0;
+}
+
+
+//for 文を使い，1 から 1000 までの範囲の 13 の倍数の数の和を求め，出力するプログラムを作>成しなさい．
+
+#include <stdio.h>
+
+int main(void) {
+
+int sum;
+
+for(int i = 13; i <= 1000; i += 13){
+        sum += i;
+}
+    printf("%d\n", sum);
+   return 0;
+}
+
+
+//for 文を二重に使い，掛け算の九九を一行毎に出力するプログラムを作成しなさい．
+
+#include <stdio.h>
+
+int main(void) {
+
+int m;
+for(int i = 1; i <= 9; i ++){
+
+        for(int j = 1; j <= 9; j++){
+        m = i*j;
+        printf("%d * %d = %d\n", i, j, m);
+        }
+}
+   return 0;
+}
