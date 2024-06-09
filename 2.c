@@ -1,4 +1,4 @@
-/*21 整数引数 a と b を取り，その和 (a + b) を返す関数を，int add(int a, int b) と>して設計し，その動作を確認できる main() と共にプログラムを作成しなさい*/
+/*19 整数引数 a と b を取り，その和 (a + b) を返す関数を，int add(int a, int b) と>して設計し，その動作を確認できる main() と共にプログラムを作成しなさい*/
 
 #include <stdio.h>
 
@@ -21,7 +21,7 @@ int main(void){
 }
 
 
-/*22 整数引数 a と b を取り，その差 (a − b) を返す関数を，int sub(int a, int b) と>して設計し，その動作を確認できる main() と共にプログラムを作成しなさい*/
+/*20 整数引数 a と b を取り，その差 (a − b) を返す関数を，int sub(int a, int b) と>して設計し，その動作を確認できる main() と共にプログラムを作成しなさい*/
 
 #include <stdio.h>
 
@@ -44,7 +44,7 @@ int main(void){
 }
 
 
-/*23 整数引数 m を取り，m の自乗 (二乗) を返す関数を，int square(int m) として設計>し，その動作を確認できる main() と共にプログラムを作成しなさい．*/
+/*21 整数引数 m を取り，m の自乗 (二乗) を返す関数を，int square(int m) として設計>し，その動作を確認できる main() と共にプログラムを作成しなさい．*/
 
 #include <stdio.h>
 
@@ -67,7 +67,7 @@ int main(void){
         return 0;
 }
 
-/*24 整数引数 a と b を取り，その商 (a ÷ b) を返す関数を，double div(int a, int b) として設計し，その動作を確認できる main() と共にプログラムを作成しなさい*/
+/*22 整数引数 a と b を取り，その商 (a ÷ b) を返す関数を，double div(int a, int b) として設計し，その動作を確認できる main() と共にプログラムを作成しなさい*/
 
 #include <stdio.h>
 
@@ -91,7 +91,7 @@ int main(void){
 }
 
 
-/*25 倍精度浮動小数点数引数 a と b を取り，その商 (a÷b) を返す関数を，double div(double a, double b)として設計し，その動作を確認できる main() と共にプログラムを作>成しなさい．*/
+/*23 倍精度浮動小数点数引数 a と b を取り，その商 (a÷b) を返す関数を，double div(double a, double b)として設計し，その動作を確認できる main() と共にプログラムを作>成しなさい．*/
 
 #include <stdio.h>
 
