@@ -335,3 +335,64 @@ int main(void)
 	 printf("最大の数字は%d\n", max);
    return 0;
    }
+
+
+
+//31 1234567890を繰り返し表示するプログラムを作成せよ．読み込まれた整数値の個数だけ数字を表示すること(forを使用すること)
+#include <stdio.h>
+ int main(void){
+  int number;
+   printf("please input the number: ");
+   scanf("%d", &number);
+    for(int i = 1; i <= number; i++){
+     printf("%d", i % 10);
+    }
+    printf("\n");
+ return 0;
+}
+
+
+
+//32 （桁数の確認にwhileを使用すること）正の整数値を読み込んで，その桁数を表示するプログラムを作成
+#include <stdio.h>
+int main(void)
+{
+ int number;
+ int grew = 0;
+ int loop;
+  printf("please input the number:");
+  scanf("%d", &number);
+   while(number < 1){
+    printf("please input the number:");
+    scanf("%d", &number);
+   }
+     loop = number;
+      while(loop > 0){
+       loop /= 10;
+       grew++;
+     }
+        printf("%dは%d桁の数\n", number, grew);
+return 0;
+}
+
+
+
+//33 読み込まれた整数値以下の２乗値を表示するプログラムを作成せよ(forを使用すること)
+#include <stdio.h>
+int main(void){
+ int number = 0;
+ printf("please input the number:");
+ scanf("%d", &number);
+  if(number > 0){
+   for(int i = 1; i <= number; i++)
+    printf("%dの2乗は%d\n", i, i*i);
+  }
+     else if(number < 0){
+      for(int i = -1; i >= number; i--)
+       printf("%dの2乗は%d\n", i, i*i);
+  }
+        else{
+         printf("0の2乗は0\n");
+        }
+return 0;
+}
