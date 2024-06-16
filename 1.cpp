@@ -55,7 +55,7 @@ int main(void){
     }
 
 
-//
+//5 for 文を使い，1 から 1000までの整数を出力しなさい
 #include <iostream>
     int main(void){
         for(int i = 1; i <= 1000; i++){
